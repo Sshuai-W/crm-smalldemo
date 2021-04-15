@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    username: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost/spring?serverTimezone=Asia/Shanghai&characterEncoding=utf-8
+    password: 666
+  mvc:
+    format:
+      date-time: yyyy-MM-dd HH:mm:ss
+
+logging:
+  level:
+    com:
+      shangma:
+        cn: debug
+  file:
+    path: E://
+
+
+mybatis-plus:
+  mapper-locations: classpath:mapper/*.xml
