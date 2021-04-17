@@ -1,8 +1,8 @@
 package com.shangma.cn.common.http;
 
 public enum StatusEnum {
-    ERROR(111111,"操作失败"),
-    SUCCESS(200000,"操作成功");
+    ERROR(11111,"操作失败"),
+    SUCCESS(20000,"操作成功");
 
     private int code;
     private String message;

@@ -34,4 +34,14 @@ public class BaseEntity implements Serializable {
     private LocalDateTime updateTime;
 
 
+    private void setData(){
+        if (id == null){
+            createBy = 1l;
+            createTime = LocalDateTime.now();
+        }else{
+            updateBy = 1l;
+            updateTime = LocalDateTime.now();
+        }
+    }
+
 }

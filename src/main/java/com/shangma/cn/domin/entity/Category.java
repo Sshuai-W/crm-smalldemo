@@ -26,7 +26,7 @@ public class Category extends BaseEntity {
     /**
      * 分类名称
      */
-    private String catetoryName;
+    private String categoryName;
 
     /**
      * 分类父id 如果是顶级分类 父id 为0
