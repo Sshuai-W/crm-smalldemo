@@ -13,6 +13,10 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+
+/**
+ * 品牌管理
+ */
 @RestController
 @RequestMapping("brand")
 @RequiredArgsConstructor
@@ -46,6 +50,11 @@ public class BrandController extends BaseController<Brand> {
         return AxiosResult.success();
     }
 
+    /**
+     * 根据ids批量删除
+     * @param ids
+     * @return
+     */
     @DeleteMapping("/pick/{ids}")
     public AxiosResult<Void> deleteAllPick(@PathVariable List<Long> ids){
         brandService.deleteByIds(ids);

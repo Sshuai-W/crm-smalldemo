@@ -2,6 +2,9 @@ package com.shangma.cn.domin.criteria.base;
 
 import lombok.Data;
 
+/**
+ * 封装查询条件基类
+ */
 @Data
 public class BaseQueryCriteria {
 

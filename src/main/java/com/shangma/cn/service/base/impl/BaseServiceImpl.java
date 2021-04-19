@@ -35,6 +35,9 @@ public class BaseServiceImpl<T> implements BaseService<T> {
 
     @Override
     public void add(T t) {
+        /**
+         * 给属性的修改或添加时间人员操作赋值
+         */
         ReflectionUtils.invokeMethod(t,"setData",null,null);
         myBaseMapper.insert(t);
     }
